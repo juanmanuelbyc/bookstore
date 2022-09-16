@@ -1,5 +1,5 @@
-import BooksContainer from "./booksContainer";
-import AddNewForm from "./addNewForm";
+import BooksContainer from './booksContainer';
+import AddNewForm from './addNewForm';
 
 const booksInfo = [
   {
@@ -26,12 +26,10 @@ const booksInfo = [
 ];
 
 function Books() {
-
-const mylist = booksInfo;
-
+  const mylist = booksInfo;
   return (
     <div className="booksPageContainer">
-      <BooksContainer list={mylist}/>
+      <BooksContainer list={mylist} />
       <AddNewForm />
     </div>
   );
