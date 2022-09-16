@@ -17,7 +17,7 @@ const booksInfo = [
     currentChapter: 'Chapter 3',
   },
   {
-    cathegory: 'Econnomy',
+    cathegory: 'Economy',
     title: 'Capital in the Twenty-First Century',
     author: 'Suzanne Collins',
     progressPercentage: '0%',
