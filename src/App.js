@@ -2,7 +2,6 @@ import React from 'react';
 import { Routes, Route, Link } from 'react-router-dom';
 import Categories from './components/categories';
 import Books from './components/books';
-import store from './redux/configureStore';
 
 function App() {
   return (
