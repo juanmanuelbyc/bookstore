@@ -1,10 +1,11 @@
 // categories.js
 
 // Actions
-const CHECK_CATEGORIES = 'CHECK_CATEGORIES';
+const CHECK_CATEGORIES = 'bookstore/categories/CHECK_CATEGORIES';
 
 // Reducer
-export default function categoriesReducer(state = {}, action = {}) {
+const initialState = [];
+export default function categoriesReducer(state = initialState, action = {}) {
   switch (action.type) {
     case CHECK_CATEGORIES: {
       return 'Under construction';
