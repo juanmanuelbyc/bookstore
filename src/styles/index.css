@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  margin: 20px 50px;
+  width: auto;
+  justify-content: space-between;
+}
+
+nav {
+  display: flex;
+  gap: 5px;
+}
+
+hr {
+  border: 1px solid black;
+  background-color: gray;
+}
+
+.booksPageContainer,
+.categoriesPageContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 100px;
+}
+
+.booksContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bookCard {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  border-style: solid;
+  border-color: black;
+  margin: 10px;
+  align-items: center;
+  padding: 15px;
+}
+
+.bookInfoAndOptions {
+  display: flex;
+  flex-direction: column;
+}
+
+.bookInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.optionsButtons {
+  display: flex;
+}
+
+.bookProgress {
+  display: flex;
+  gap: 20px;
+}
+
+.percentageProgress {
+  display: flex;
+}
+
+.percentageInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.progressInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.newBookFormContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.newBookForm {
+  display: flex;
+  width: 100%;
+  gap: 50px;
+}
