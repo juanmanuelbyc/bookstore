@@ -1,13 +1,15 @@
 import React, { useState } from 'react';
+import { useDispatch } from 'react-redux';
 import { v4 as uuid } from 'uuid';
 import { addBook } from '../redux/books/books';
-import store from '../redux/configureStore';
 
 function AddNewForm() {
   const [newBookInfo, SetNewBookInfo] = useState({
     title: '',
     author: '',
   });
+
+  const dispatch = useDispatch();
 
   const handleChange = (e) => {
     e.preventDefault();
@@ -19,7 +21,7 @@ function AddNewForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    store.dispatch(addBook({
+    dispatch(addBook({
       id: uuid(),
       cathegory: 'Unknown',
       title: newBookInfo.title,

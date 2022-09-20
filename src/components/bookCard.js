@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import store from '../redux/configureStore';
+import { useDispatch } from 'react-redux';
 import { removeBook } from '../redux/books/books';
 
 function BookCard(props) {
@@ -13,9 +13,11 @@ function BookCard(props) {
     progressPercentage,
   } = props;
 
+  const dispatch = useDispatch();
+
   const remove = (e) => {
     e.preventDefault();
-    store.dispatch(removeBook(id));
+    dispatch(removeBook(id));
   };
 
   return (
