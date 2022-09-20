@@ -7,7 +7,7 @@ function AddNewForm() {
       <form className="newBookForm">
         <input className="newBookTitle" placeholder="Book title" />
         <select className="newBooCategory" placeholder="Category">
-          <option value="" disabled selected hidden>Category</option>
+          <option value="" disabled>Category</option>
         </select>
       </form>
     </div>

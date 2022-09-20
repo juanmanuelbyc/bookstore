@@ -7,14 +7,10 @@ const REMOVE_BOOK = 'bookstore/books/REMOVE_BOOK';
 // Reducer
 export default function booksReducer(state = [], action = {}) {
   switch (action.type) {
-    case ADD_BOOK: {
-      const newBook = action.book;
-      return { ...state, newBook };
-    }
-    case REMOVE_BOOK: {
-      const bookToRemove = action.bookTitle;
-      return state.filter((book) => book.title !== bookToRemove);
-    }
+    case ADD_BOOK:
+      return [...state, action.book];
+    case REMOVE_BOOK:
+      return state.filter((book) => book.title !== action.bookTitle);
     default: return state;
   }
 }
