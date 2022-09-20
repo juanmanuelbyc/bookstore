@@ -1,6 +1,7 @@
 // books.js
 const booksList = [
   {
+    id: 'book1',
     cathegory: 'Action',
     title: 'The Hunger Games',
     author: 'Suzanne Collins',
@@ -8,6 +9,7 @@ const booksList = [
     currentChapter: 'Chapter 15',
   },
   {
+    id: 'book2',
     cathegory: 'Science Fiction',
     title: 'Dune',
     author: 'Frank Herbert',
@@ -15,6 +17,7 @@ const booksList = [
     currentChapter: 'Chapter 3',
   },
   {
+    id: 'book3',
     cathegory: 'Economy',
     title: 'Capital in the Twenty-First Century',
     author: 'Suzanne Collins',
@@ -32,7 +35,7 @@ export default function booksReducer(state = booksList, action = {}) {
     case ADD_BOOK:
       return [...state, action.book];
     case REMOVE_BOOK:
-      return state.filter((book) => book.title !== action.bookTitle);
+      return state.filter((book) => book.id !== action.bookId);
     default: return state;
   }
 }
@@ -42,6 +45,6 @@ export function addBook(book) {
   return { type: ADD_BOOK, book };
 }
 
-export function removeBook(bookTitle) {
-  return { type: REMOVE_BOOK, bookTitle };
+export function removeBook(bookId) {
+  return { type: REMOVE_BOOK, bookId };
 }
