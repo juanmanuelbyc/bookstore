@@ -4,6 +4,7 @@ import AddNewForm from './addNewForm';
 
 function Books() {
   const mylist = useSelector((state) => state.booksReducer);
+
   return (
     <div className="booksPageContainer">
       <BooksContainer list={mylist} />

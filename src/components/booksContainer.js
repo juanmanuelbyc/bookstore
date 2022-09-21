@@ -6,13 +6,13 @@ function BooksContainer(props) {
   const { list } = props;
   const booksCards = list.map((item) => (
     <BookCard
-      key={item.id}
-      id={item.id}
-      title={item.title}
-      author={item.author}
-      cathegory={item.cathegory}
-      currentChapter={item.currentChapter}
-      progressPercentage={item.progressPercentage}
+      key={item[0]}
+      id={item[0]}
+      title={item[1][0].title}
+      author={item[1][0].author}
+      category={item[1][0].category}
+      currentChapter="Introduction"
+      progressPercentage="0%"
     />
   ));
 
