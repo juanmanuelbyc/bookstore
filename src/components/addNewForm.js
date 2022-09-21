@@ -22,12 +22,10 @@ function AddNewForm() {
   const handleSubmit = (e) => {
     e.preventDefault();
     dispatch(addBook({
-      id: uuid(),
-      cathegory: 'Unknown',
+      item_id: uuid(),
+      category: 'Unknown',
       title: newBookInfo.title,
       author: newBookInfo.author,
-      progressPercentage: '0%',
-      currentChapter: 'Introduction',
     }));
     SetNewBookInfo({
       title: '',

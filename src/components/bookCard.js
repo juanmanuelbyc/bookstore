@@ -8,7 +8,7 @@ function BookCard(props) {
     id,
     title,
     author,
-    cathegory,
+    category,
     currentChapter,
     progressPercentage,
   } = props;
@@ -24,7 +24,7 @@ function BookCard(props) {
     <div className="bookCard">
       <div className="bookInfoAndOptions">
         <div className="bookInfo">
-          <h4>{cathegory}</h4>
+          <h4>{category}</h4>
           <h3>{title}</h3>
           <h4>{author}</h4>
         </div>
@@ -58,7 +58,7 @@ BookCard.propTypes = {
   id: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   author: PropTypes.string.isRequired,
-  cathegory: PropTypes.string.isRequired,
+  category: PropTypes.string.isRequired,
   currentChapter: PropTypes.string.isRequired,
   progressPercentage: PropTypes.string.isRequired,
 };
