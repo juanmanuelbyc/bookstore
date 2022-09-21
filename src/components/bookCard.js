@@ -1,14 +1,24 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { useDispatch } from 'react-redux';
+import { removeBook } from '../redux/books/books';
 
 function BookCard(props) {
   const {
+    id,
     title,
     author,
     cathegory,
     currentChapter,
     progressPercentage,
   } = props;
+
+  const dispatch = useDispatch();
+
+  const remove = (e) => {
+    e.preventDefault();
+    dispatch(removeBook(id));
+  };
 
   return (
     <div className="bookCard">
@@ -20,7 +30,7 @@ function BookCard(props) {
         </div>
         <div className="optionsButtons">
           <button type="button">Comments</button>
-          <button type="button">Remove</button>
+          <button type="button" onClick={remove}>Remove</button>
           <button type="button">Edit</button>
         </div>
       </div>
@@ -45,6 +55,7 @@ function BookCard(props) {
 export default BookCard;
 
 BookCard.propTypes = {
+  id: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   author: PropTypes.string.isRequired,
   cathegory: PropTypes.string.isRequired,

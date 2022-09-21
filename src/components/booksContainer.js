@@ -6,7 +6,8 @@ function BooksContainer(props) {
   const { list } = props;
   const booksCards = list.map((item) => (
     <BookCard
-      key={item.title}
+      key={item.id}
+      id={item.id}
       title={item.title}
       author={item.author}
       cathegory={item.cathegory}
