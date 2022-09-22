@@ -24,28 +24,31 @@ function BookCard(props) {
     <div className="bookCard">
       <div className="bookInfoAndOptions">
         <div className="bookInfo">
-          <h4>{category}</h4>
-          <h3>{title}</h3>
-          <h4>{author}</h4>
+          <span className="School-of">{category}</span>
+          <span className="Title">{title}</span>
+          <span className="Author">{author}</span>
         </div>
         <div className="optionsButtons">
-          <button type="button">Comments</button>
-          <button type="button" onClick={remove}>Remove</button>
-          <button type="button">Edit</button>
+          <button type="button" className="optionButton">Comments</button>
+          <hr className="optionButtonSeparator"/>
+          <button type="button" className="optionButton" onClick={remove}>Remove</button>
+          <hr className="optionButtonSeparator"/>
+          <button type="button"className="optionButton">Edit</button>
         </div>
       </div>
       <div className="bookProgress">
         <div className="percentageProgress">
           <div className="percentageImage" />
-          <div className="pewrcentageInfo">
-            <h2>{progressPercentage}</h2>
-            <h4>completed</h4>
+          <div className="percentageInfo">
+            <span className="Percent-Complete">{progressPercentage}</span>
+            <span className="Completed">Completed</span>
           </div>
         </div>
+        <hr className="progressSeparator"/>
         <div className="progressInfo">
-          <h4>Current chapter</h4>
-          <h3>{currentChapter}</h3>
-          <button type="button">UPDATE PROGRESS</button>
+          <span className="Current-Chapter">CURRENT CHAPTER</span>
+          <span className="Current-Lesson">{currentChapter}</span>
+          <button type="button" className="Update-Button">UPDATE PROGRESS</button>
         </div>
       </div>
     </div>

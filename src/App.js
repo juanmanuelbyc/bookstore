@@ -10,20 +10,19 @@ function App() {
   dispatch(fetchBooksList());
 
   return (
-    <div className="App">
+    <div className="App Bookstore-CMS">
+      <div className="panel-general">
       <header>
-        <h1>Bookstore CMS</h1>
-        <nav>
-          <Link to="/">Books</Link>
-          <hr />
-          <Link to="/categories">Categories</Link>
-        </nav>
-        <button type="button">User</button>
+        <span className="Bookstore-CMS-Text Text-Style-5">Bookstore CMS</span>
+        <Link to="/" className="BOOKS Text-Style-3">Books</Link>
+        <Link to="/categories" className="CATEGORIES Text-Style-3">Categories</Link>
+        <div className="userIcon"/>
       </header>
       <Routes>
         <Route path="/" element={<Books />} />
         <Route path="categories" element={<Categories />} />
       </Routes>
+      </div>
     </div>
   );
 }
