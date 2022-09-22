@@ -35,14 +35,14 @@ function AddNewForm() {
 
   return (
     <div className="newBookFormContainer">
-      <h3>ADD NEW BOOK</h3>
+      <span className="NewBookFormTitle">ADD NEW BOOK</span>
       <form className="newBookForm" onSubmit={handleSubmit}>
-        <input className="newBookTitle" name="title" placeholder="Book title" required onChange={handleChange} value={newBookInfo.title} />
-        <input className="newBookAuthor" name="author" placeholder="Author" required onChange={handleChange} value={newBookInfo.author} />
-        <select className="newBooCategory" placeholder="Category" defaultValue="Category">
-          <option value="Category" hidden disabled>Select Category</option>
+        <input className="newBookTitle NewBookInfo" name="title" placeholder="Book title" required onChange={handleChange} value={newBookInfo.title} />
+        <input className="newBookAuthor NewBookInfo" name="author" placeholder="Author" required onChange={handleChange} value={newBookInfo.author} />
+        <select className="newBooCategory NewBookInfo" placeholder="Category" defaultValue="Category">
+          <option className="defaultOption" value="Category" hidden disabled>Category</option>
         </select>
-        <input type="submit" value="Add Book" />
+        <input type="submit" className="submitButton" value="ADD BOOK" />
       </form>
     </div>
   );

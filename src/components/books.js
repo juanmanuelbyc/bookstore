@@ -8,6 +8,7 @@ function Books() {
   return (
     <div className="booksPageContainer">
       <BooksContainer list={mylist} />
+      <hr className="booksContainerSeparator" />
       <AddNewForm />
     </div>
   );

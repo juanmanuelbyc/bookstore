@@ -18,7 +18,6 @@ function BooksContainer(props) {
 
   return (
     <div className="booksContainer">
-      <h2 className="listOfBooksTitle">List of books</h2>
       {booksCards}
     </div>
   );
