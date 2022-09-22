@@ -30,10 +30,10 @@ function BookCard(props) {
         </div>
         <div className="optionsButtons">
           <button type="button" className="optionButton">Comments</button>
-          <hr className="optionButtonSeparator"/>
+          <hr className="optionButtonSeparator" />
           <button type="button" className="optionButton" onClick={remove}>Remove</button>
-          <hr className="optionButtonSeparator"/>
-          <button type="button"className="optionButton">Edit</button>
+          <hr className="optionButtonSeparator" />
+          <button type="button" className="optionButton">Edit</button>
         </div>
       </div>
       <div className="bookProgress">
@@ -44,7 +44,7 @@ function BookCard(props) {
             <span className="Completed">Completed</span>
           </div>
         </div>
-        <hr className="progressSeparator"/>
+        <hr className="progressSeparator" />
         <div className="progressInfo">
           <span className="Current-Chapter">CURRENT CHAPTER</span>
           <span className="Current-Lesson">{currentChapter}</span>
