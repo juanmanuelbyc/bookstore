@@ -14,8 +14,8 @@ function App() {
       <div className="panel-general">
       <header>
         <span className="Bookstore-CMS-Text Text-Style-5">Bookstore CMS</span>
-        <Link to="/" className="BOOKS Text-Style-3">Books</Link>
-        <Link to="/categories" className="CATEGORIES Text-Style-3">Categories</Link>
+        <Link to="/" className="BOOKS Text-Style-3">BOOKS</Link>
+        <Link to="/categories" className="CATEGORIES Text-Style-3">CATEGORIES</Link>
         <div className="userIcon"/>
       </header>
       <Routes>
